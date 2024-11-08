@@ -18,6 +18,7 @@ console.log('v', isRunningWebpack ? webpack.version : rspack.rspackVersion);
  */
 const config = {
   mode: "production",
+  // mode: "development", // works
   entry: "./src/index.ts",
   output: {
     clean: true,

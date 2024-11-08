@@ -1,5 +1,6 @@
 body {
   content: var(--some-var, "\f101");
+  // content: "\f101"; //works
 }
 
 .scss {
