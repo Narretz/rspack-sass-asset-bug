@@ -1,0 +1,33 @@
+{
+  "name": "rspack-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:rspack": "cross-env RSPACK=1 npx rspack build -c ./config.mjs && cross-env RSPACK=1 node serveDist.js",
+    "build:webpack": "cross-env WEBPACK=1 npx webpack -c ./config.mjs && cross-env WEBPACK=1 node serveDist.js",
+    "dev:rspack": "cross-env RSPACK=1 rspack dev -c ./config.mjs",
+    "dev:webpack": "cross-env WEBPACK=1 webpack serve -c ./config.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rspack/cli": "^1.1.0",
+    "@rspack/core": "^1.1.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "sass": "^1.77.8",
+    "sass-embedded": "^1.80.6",
+    "sass-loader": "^16.0.3",
+    "sass-resources-loader": "^2.2.5",
+    "swc-loader": "^0.2.6",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "npm-run-all2": "^6.2.0"
+  }
+}
